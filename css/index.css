@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    letter-spacing: 15px;
+}
