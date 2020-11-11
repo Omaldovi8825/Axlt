@@ -2,10 +2,65 @@ body {
     margin: 0;
 }
 
-.header {
-    text-align: center;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #d6382d;
 }
 
-.header h1 {
+header h1 {
     letter-spacing: 15px;
+    color: white;
+    font-size: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    overflow: hidden;
+}
+
+main .rueda{
+    height: 110vh;
+    width: 110vh;
+    border: 25px solid #d6382d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .rueda .ruedita{
+    height: 40vh;
+    width: 40vh;
+    border: 10px solid #d6382d;
+    border-radius: 50%;
+}
+
+footer {
+    height: 15vh;
+    background-color: #d6382d;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .sm-container{
+    width: 50%;
+    height: 10vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .sm-container div{
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    border-radius: 50%;
 }

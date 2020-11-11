@@ -4,7 +4,8 @@
   "description": "pagina web de Axlt Mexico",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "live": "live-server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Omaldovi8825/Axlt/issues"
   },
-  "homepage": "https://github.com/Omaldovi8825/Axlt#readme"
+  "homepage": "https://github.com/Omaldovi8825/Axlt#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
