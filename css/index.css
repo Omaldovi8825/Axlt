@@ -25,8 +25,8 @@ main {
 }
 
 main .rueda{
-    height: 110vh;
-    width: 110vh;
+    height: 80vw;
+    width: 80vw;
     border: 25px solid #d6382d;
     border-radius: 50%;
     display: flex;
@@ -59,8 +59,37 @@ footer .sm-container{
 }
 
 footer .sm-container div{
-    width: 8vh;
-    height: 8vh;
+    width: 4vw;
+    height: 4vw;
     background-color: white;
     border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px){
+    
+    footer {
+        justify-content: center;
+    }
+
+    footer .sm-container {
+        width: 80%;
+    }
+
+    footer .sm-container div{
+        width: 6vw;
+        height: 6vw;
+    }
+}
+
+@media only screen and (max-width: 700px){
+   
+    main .rueda{
+        border: none;
+    }
+    
+
+    footer .sm-container div{
+        width: 8vw;
+        height: 8vw;
+    }
 }
