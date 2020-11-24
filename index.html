@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>AXLT</h1>
+        <button class="psico" id="psico" onclick="ponteLoco()">Psico</button>
     </header>
-    <main class="central">
-        <div class="rueda">
-            <img src="./images/logos/logo.svg" alt="menu-principal">
+    
+    <main>
+        <div class="rueda" id="rueda" onmouseover="muevete()"> 
+            <div class="logo" id="logo-centro">
+                <a href="#">
+                    <img src="./images/otros/gotasolida.svg" alt="" class="uno"/>
+                </a>
+                <a href="#">
+                    <img src="./images/otros/gotasolida.svg" alt="" class="dos" id="gota2"/>
+                </a>
+                <a href="#">
+                    <img src="./images/otros/gotasolida.svg" alt="" class="tres"/>
+                </a>
+                <a href="#">
+                    <img src="./images/otros/gotasolida.svg" alt="" class="cuatro"/>
+                </a>
+            </div>
         </div>
     </main>
-    <footer class="pie">
+    
+    <footer id="footer">
         <div class="sm-container">
             <a href="#">
                 <img src="./images/sm/facebook.svg" alt="facebook">

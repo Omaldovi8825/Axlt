@@ -1,12 +1,17 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
 
 header {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     background-color: #d6382d;
 }
 
@@ -16,11 +21,20 @@ header h1 {
     font-size: 50px;
 }
 
+header .psico{
+    position: absolute;
+    left: 3vh;
+    bottom: 2vh;
+    background-color: black;
+    color: #71dd28;
+    padding: 10px 20px;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
 }
 
@@ -34,12 +48,53 @@ main .rueda{
     align-items: center;
 }
 
-main .rueda img{
+main .logo{
     width: 40vh;
+    height: 40vh;
+    background-image: url('../images/logos/logo.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+main .logo img {
+    width: 12vh;
+    position: absolute;
+}
+
+main .logo img:hover {
+    width: 14vh;
+}
+
+main .logo .uno {
+    top: 0;
+    left: 50%;
+    transform: rotate(-85deg) translate(97%, -106%);
+}
+
+main .logo .dos {
+    top: 50%;
+    left: 0;
+    /* transform: rotate(180deg) translate(120%, 60%); */
+    transform: rotate(180deg) translate(324%, 60%);
+    transition: transform 2s;
+    opacity: 0;
+}
+
+main .logo .tres {
+    top: 50%;
+    right: 0;
+    transform: translate(115%, -75%);
+}
+
+main .logo .cuatro {
+    bottom: 0;
+    left: 50%;
+    transform: rotate(90deg) translate(99%, 63%)
 }
 
 footer {
-    height: 15vh;
+    height: 10vh;
     background-color: #d6382d;
     display: flex;
     justify-content: flex-end;
@@ -48,7 +103,7 @@ footer {
 
 footer .sm-container{
     width: 50%;
-    height: 14vh;
+    /* height: 10vh; */
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-around;
